@@ -44,7 +44,6 @@ script:
     echo No kdb+, no tests;
   fi
 
-
 deploy:
   provider: releases
   api_key: "$GITHUB_APIKEY"
@@ -71,8 +70,6 @@ jobs:
         on:
           tags: true
           condition: $TRAVIS_BRANCH =~ ^[0-9]+\.
-
-
 
 notifications:
   slack:
